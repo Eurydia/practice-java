@@ -12,8 +12,5 @@ public class P5 {
 
         double curr_estimate, next_estimate;
 
-        curr_estimate = s / 2.0d;
-        next_estimate = compute_next_estimate(s, curr_estimate);
-
     }
 }
