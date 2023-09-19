@@ -1,3 +1,5 @@
+package elte_2023_fall.week02.task;
+
 class Point {
     double x;
     double y;

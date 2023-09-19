@@ -1,4 +1,6 @@
+package elte_2023_fall.week01.practice;
 // Create a program which takes its first command-line argument as an integer number, 
+
 // and decides whether this number is a perfect number. 
 // In number theory, a natural number is called perfect, if the sum of its positive divisors 
 // (excluding the number itself) is equal to the number. 

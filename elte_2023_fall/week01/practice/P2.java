@@ -1,4 +1,6 @@
+package elte_2023_fall.week01.practice;
 // Change the previous program in such a way that it computes how many perfect numbers are 
+
 // in the range between 1 and the number given as the first command-line argument.
 
 public class P2 {

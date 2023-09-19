@@ -1,3 +1,4 @@
+package elte_2023_fall.week02.task;
 
 public class T01 {
     public static void main(String[] args) {

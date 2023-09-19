@@ -1,3 +1,5 @@
+package elte_2023_fall.week01.task;
+
 public class T4GreetCLI {
     public static void main(String[] args) {
 
