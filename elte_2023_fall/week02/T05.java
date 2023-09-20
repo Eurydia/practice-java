@@ -1,4 +1,4 @@
-package elte_2023_fall.week02.task;
+package elte_2023_fall.week02;
 // Write the Distance program,which interprets its command line arguments as a
 
 // sequence of points,and sums up the distances found between any two

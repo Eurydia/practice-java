@@ -1,4 +1,4 @@
-package elte_2023_fall.week02.task;
+package elte_2023_fall.week02;
 
 public class Circle {
     double posX;

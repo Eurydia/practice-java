@@ -1,4 +1,4 @@
-package elte_2023_fall.week01.practice;
+package elte_2023_fall.week01;
 
 // Write a program which computes the square root of a number using the Babylonian-method. 
 // Given a number , its square root can be approximated by the sequence defined below. 

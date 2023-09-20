@@ -1,4 +1,4 @@
-package elte_2023_fall.week01.practice;
+package elte_2023_fall.week01;
 // Create a program which takes its first command-line argument as an integer number, 
 
 // and decides whether this number is a perfect number. 

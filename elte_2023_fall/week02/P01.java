@@ -1,11 +1,10 @@
-package elte_2023_fall.week02.practice;
-
-import elte_2023_fall.week02.task.Complex;
 // Create the method conjugate() in class Complex, which turns a complex number
 
 // to its conjugate. Create the method reciprocate() as well, which turns the
 // complex number to its reciprocal. Implement the div(c) method, which divides
 // the complex number with the other complex number c provided as parameter.
+
+package elte_2023_fall.week02;
 
 public class P01 {
 

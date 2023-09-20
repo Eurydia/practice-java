@@ -1,4 +1,4 @@
-package elte_2023_fall.week02.task;
+package elte_2023_fall.week02;
 // Create a class Circle representing circles with an origin (fields x and y of
 
 // type double) and a radius (field of type double). Create a method enlarge(f),

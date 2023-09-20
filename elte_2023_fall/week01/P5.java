@@ -1,4 +1,4 @@
-package elte_2023_fall.week01.practice;
+package elte_2023_fall.week01;
 // Compute an approximation of using the following continued fraction..
 
 public class P5 {
