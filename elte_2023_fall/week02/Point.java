@@ -1,6 +1,6 @@
 package elte_2023_fall.week02;
 
-public class Point {
+class Point {
     double x;
     double y;
 
@@ -23,7 +23,7 @@ public class Point {
     }
 
     public void mirror(Point p) {
-
+        this.mirror(p.x, p.y);
     }
 
     public void mirror(double cx, double cy) {
@@ -39,5 +39,15 @@ public class Point {
 
     public String asString() {
         return String.format("x=%f, y=%f", this.x, this.y);
+    }
+
+    public static void main(String[] args) {
+        Point a = new Point(0, 0);
+        Point p = new Point(1, 1);
+
+        // a.mirror(1, 1);
+        a.mirror(p);
+        a.asString();
+
     }
 }
