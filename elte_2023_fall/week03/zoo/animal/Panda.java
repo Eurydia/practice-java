@@ -18,9 +18,11 @@ public class Panda {
     }
 
     public void happyBirthday(int limitYear) {
+
         this.age++;
+        this.name = String.format("%d years old foundling from %s", age, country);
         if (this.age > limitYear) {
-            this.country = "People’s Republic of China";
+            this.country = "People's Republic of China";
         }
         System.out.printf("Happy birthday %s from %s on your %dth birthday", this.name, this.country, this.age);
     }
