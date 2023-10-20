@@ -1,4 +1,4 @@
-# Compilation and execution
+b# Compilation and execution
 
 ## Compilation 
 
@@ -72,3 +72,11 @@ Error: Could not find or load main class project.SomeClassA
 Caused by: java.lang.ClassNotFoundException: project.SomeClassA
 ```
 
+### JAR Archive
+
+The `-jar` flag may be specified to the Java Virtual Machine.
+Instead of launching a `.class` binary, it launches JAR archive.
+
+```bash
+java -jar path/to/jar/archive.jar
+```
