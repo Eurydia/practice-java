@@ -20,4 +20,5 @@ public class Vehicle {
     public void setRegistrationNumber(String registrationNumber) {
         this.registrationNumber = registrationNumber;
     }
+
 }

@@ -3,8 +3,6 @@ package elte_2023_fall.week05.math.textual;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 
-import static check.CheckThat.*;
-
 import org.junit.Test;
 
 public class AdderTest {
