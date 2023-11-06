@@ -21,4 +21,16 @@ public class Vehicle {
         this.registrationNumber = registrationNumber;
     }
 
+    public int getColor1() {
+        return this.color1;
+    }
+
+    public int getColor2() {
+        return this.color2;
+    }
+
+    public int getModelId() {
+        return this.modelId;
+    }
+
 }

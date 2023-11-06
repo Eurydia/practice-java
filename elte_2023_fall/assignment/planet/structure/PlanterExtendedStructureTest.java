@@ -8,23 +8,26 @@ import check.CheckThat;
 public class PlanterExtendedStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("elte_2023_fall.assignment.planet.plant.Planter")
+        CheckThat.theClass("planet.plant.Planter")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 
     @Test
+    // @DisabledIf(notApplicable)
     public void constructor02() {
         it.hasConstructor(withArgs("array of int"))
                 .thatIs(VISIBLE_TO_ALL);
     }
 
     @Test
+    // @DisabledIf(notApplicable)
     public void constructor03() {
-        it.hasConstructor(withArgs("array of int", "elte_2023_fall.assignment.planet.Planet"))
+        it.hasConstructor(withArgs("array of int", "planet.Planet"))
                 .thatIs(VISIBLE_TO_ALL);
     }
 
     @Test
+    // @DisabledIf(notApplicable)
     public void methodGetPlantCounts() {
         it.hasMethod("getPlantCounts", withNoParams())
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
@@ -32,8 +35,9 @@ public class PlanterExtendedStructureTest {
     }
 
     @Test
+    // @DisabledIf(notApplicable)
     public void methodGrowPlantsByDistanceFrom() {
-        it.hasMethod("growPlantsByDistanceFrom", withParams("elte_2023_fall.assignment.planet.Planet"))
+        it.hasMethod("growPlantsByDistanceFrom", withParams("planet.Planet"))
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
                 .thatReturnsNothing();
     }

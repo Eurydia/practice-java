@@ -1,4 +1,4 @@
-package elte_2023_fall.week04.famous.sequence;
+package elte_2023_fall.unit04.famous.sequence;
 
 public class Fibonacci {
 

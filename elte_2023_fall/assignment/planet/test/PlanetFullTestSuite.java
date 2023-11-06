@@ -5,8 +5,8 @@ import org.junit.platform.suite.api.Suite;
 
 @Suite
 @SelectClasses({
-                PlanetCompulsoryTest.class,
-                PlanetExtendedTest.class,
+        PlanetCompulsoryTest.class,
+        PlanetExtendedTest.class,
 })
 public class PlanetFullTestSuite {
 }

@@ -1,4 +1,4 @@
-package elte_2023_fall.unit04.math.operation.safe
+package elte_2023_fall.unit04.math.operation;
 
 import static org.junit.Assert.assertEquals;
 

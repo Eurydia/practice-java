@@ -1,4 +1,4 @@
-package elte_2023_fall.unit05.math.operation;
+package elte_2023_fall.unit04.math.operation;
 
 public class Power {
     public static double power(int b, int exp) {

@@ -1,7 +1,7 @@
 package elte_2023_fall.unit03.magic.library;
 
 public class Incantation {
-    public String text;
+    private String text;
     private int index;
 
     public Incantation(String text, int index) {
@@ -13,8 +13,7 @@ public class Incantation {
     }
 
     public Incantation(Incantation otherInc) {
-        this.text = otherInc.text;
-        this.index = otherInc.index;
+        this(otherInc.text, otherInc.index);
     }
 
     public String getText() {
@@ -32,18 +31,18 @@ public class Incantation {
     public boolean enchant(Incantation otherInc, boolean isPrepend) {
 
         String[] textSplitted = this.text.split("\\W+");
-        if (this.index < 0 || this.index >= textSplitted.length) {
+        if (this.index - 1 < 0 || this.index - 1 >= textSplitted.length) {
             return false;
         }
 
         if (isPrepend) {
-            otherInc.text = String.format("%s %s", textSplitted[this.index], otherInc.text);
+            otherInc.text = String.format("%s %s", textSplitted[this.index - 1], otherInc.text);
             otherInc.setIndex(otherInc.getIndex() + 1);
-        } else {
-            otherInc.text = String.format("%s %s", otherInc.text, textSplitted[this.index]);
-            otherInc.setIndex(otherInc.getIndex() - 1);
+            return true;
         }
 
+        otherInc.text = String.format("%s %s", otherInc.text, textSplitted[this.index - 1]);
+        otherInc.setIndex(otherInc.getIndex() - 1);
         return true;
     }
 

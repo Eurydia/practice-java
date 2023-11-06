@@ -1,4 +1,4 @@
-package elte_2023_fall.unit05.triangularnumber;
+package elte_2023_fall.unit04.triangularnumber;
 
 public class TriangularNumber {
     public static int getTriangularNumber(int n) {

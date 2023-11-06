@@ -1,4 +1,4 @@
-package elte_2023_fall.unit05.math.textual;
+package elte_2023_fall.unit04.math.textual;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;

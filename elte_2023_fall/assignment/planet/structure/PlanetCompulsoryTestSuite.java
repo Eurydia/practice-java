@@ -7,10 +7,9 @@ import elte_2023_fall.assignment.planet.test.PlanetCompulsoryTest;
 
 @Suite
 @SelectClasses({
-        PlanetCompulsoryStructureTest.class,
-        PlanetCompulsoryTest.class,
-        PlanterCompulsoryStructureTest.class
+    PlanetCompulsoryStructureTest.class,
+    PlanterCompulsoryStructureTest.class,
+    PlanetCompulsoryTest.class
 })
-
 public class PlanetCompulsoryTestSuite {
 }
