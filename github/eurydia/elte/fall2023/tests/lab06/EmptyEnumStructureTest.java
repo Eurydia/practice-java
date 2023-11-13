@@ -1,0 +1,15 @@
+package github.eurydia.elte.fall2023.tests.lab06;
+
+import static check.CheckThat.*;
+import static check.CheckThat.Condition.*;
+import org.junit.jupiter.api.*;
+import check.CheckThat;
+
+public class EmptyEnumStructureTest {
+    @BeforeAll
+    public static void init() {
+        CheckThat.theEnum("EmptyEnum")
+                .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
+                .hasEnumElements();
+    }
+}
