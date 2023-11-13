@@ -8,7 +8,7 @@ import check.CheckThat;
 public class SoliloquyStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("magic.Soliloquy")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit03.Soliloquy")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

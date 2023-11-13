@@ -8,7 +8,7 @@ import check.CheckThat;
 public class CaesarCipherStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("cipher.CaesarCipher")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit04.cipher.CaesarCipher")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

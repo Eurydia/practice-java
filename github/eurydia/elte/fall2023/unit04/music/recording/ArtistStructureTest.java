@@ -8,7 +8,7 @@ import check.CheckThat;
 public class ArtistStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("music.recording.Artist")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit04.music.recording.Artist")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

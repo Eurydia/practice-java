@@ -8,7 +8,7 @@ import check.CheckThat;
 public class FanStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("music.fan.Fan")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit04.music.fan.Fan")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 
@@ -22,7 +22,7 @@ public class FanStructureTest {
 
     @Test
     public void fieldFavourite() {
-        it.hasField("favourite", ofType("music.recording.Artist"))
+        it.hasField("favourite", ofType("github.eurydia.elte.fall2023.unit04.music.recording.Artist"))
                 .thatIs(INSTANCE_LEVEL, NOT_MODIFIABLE, VISIBLE_TO_NONE)
                 .thatHas(GETTER)
                 .thatHasNo(SETTER);
@@ -38,7 +38,7 @@ public class FanStructureTest {
 
     @Test
     public void constructor() {
-        it.hasConstructorWithParams("String", "music.recording.Artist")
+        it.hasConstructorWithParams("String", "github.eurydia.elte.fall2023.unit04.music.recording.Artist")
                 .thatIs(VISIBLE_TO_ALL);
     }
 

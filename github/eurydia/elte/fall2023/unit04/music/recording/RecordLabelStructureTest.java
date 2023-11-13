@@ -8,7 +8,7 @@ import check.CheckThat;
 public class RecordLabelStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("music.recording.RecordLabel")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit04.music.recording.RecordLabel")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

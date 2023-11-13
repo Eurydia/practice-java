@@ -1,9 +1,9 @@
-# ELTE 2023/Fall Java practice
+# ELTE/Fall2023 Java practice
 
 ## Directories
 
 - `questions/` contains problem sets
-- `week ##/` contains tasks and practices completed in each week
+- `unit##/` contains tasks and practices completed in each week
 
 Originally, `week ##/` is separated into:
 
