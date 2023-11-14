@@ -8,8 +8,7 @@ import org.junit.Test;
 public class MultiLineFileTest {
   @Test()
   public void emptyFile() {
-
-    assertDoesNotThrow(() -> assertEquals(38, MultiLineFile.addNumbers(
+    assertDoesNotThrow(() -> assertEquals(0, MultiLineFile.addNumbers(
         "github\\eurydia\\elte\\fall2023\\unit07\\text\\to\\numbers\\tests\\comma_sep.txt",
         ",".charAt(0))));
 
@@ -17,14 +16,14 @@ public class MultiLineFileTest {
 
   @Test
   public void commaSeparatedFile() {
-    assertDoesNotThrow(() -> assertEquals(38, MultiLineFile.addNumbers(
+    assertDoesNotThrow(() -> assertEquals(60, MultiLineFile.addNumbers(
         "github\\eurydia\\elte\\fall2023\\unit07\\text\\to\\numbers\\tests\\comma_sep.txt",
         ",".charAt(0))));
   }
 
   @Test
   public void spaceSeparatedFile() {
-    assertDoesNotThrow(() -> assertEquals(38, MultiLineFile.addNumbers(
+    assertDoesNotThrow(() -> assertEquals(60, MultiLineFile.addNumbers(
         "github\\eurydia\\elte\\fall2023\\unit07\\text\\to\\numbers\\tests\\space_sep.txt",
         " ".charAt(0))));
   }

@@ -8,7 +8,7 @@ import check.CheckThat;
 public class SingleLineFileStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("github.eurydia.elte.fall2023.unit7.text.to.numbers.SingleLineFile")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit07.text.to.numbers.SingleLineFile")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

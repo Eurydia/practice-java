@@ -6,29 +6,26 @@ import java.io.IOException;
 
 public class SingleLineFile {
   public static int addNumbers(String fileName) throws IOException {
+    int total = 0;
+    String line;
 
     try (FileReader fileReader = new FileReader(fileName);) {
-
       BufferedReader bufferedReader = new BufferedReader(fileReader);
-
-      String line = bufferedReader.readLine();
-
+      line = bufferedReader.readLine();
       if (line == null) {
         throw new IllegalArgumentException("Empty file");
       }
-
-      int total = 0;
-
-      for (String w : line.split(" ")) {
-        try {
-          total += Integer.parseInt(w);
-        } catch (NumberFormatException e) {
-          System.err.println(w);
-        }
-      }
-      return total;
     } catch (IllegalArgumentException e) {
       throw e;
     }
+
+    for (String word : line.split(" ")) {
+      try {
+        total += Integer.parseInt(word);
+      } catch (NumberFormatException e) {
+        System.err.println(word);
+      }
+    }
+    return total;
   }
 }
