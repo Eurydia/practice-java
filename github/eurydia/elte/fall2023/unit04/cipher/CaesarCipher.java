@@ -6,4 +6,5 @@ public class CaesarCipher {
   public CaesarCipher(int shift) {
     this.shift = shift;
   }
+
 }

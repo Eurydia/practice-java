@@ -5,8 +5,8 @@ import org.junit.platform.suite.api.Suite;
 
 @Suite
 @SelectClasses({
-                AdderStructureTest.class,
-                AdderTest.class
+    AdderStructureTest.class,
+    AdderTest.class
 })
 public class AdderTestSuite {
 }

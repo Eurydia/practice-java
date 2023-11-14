@@ -43,7 +43,9 @@ public class Fan {
   }
 
   public String toString2() {
-    return "%s,%s,%d".format(this.name, this.favourite.getName(), this.moneySpent);
+    return String.format("%s,%s,%d", this.name, this.favourite.getName(), this.moneySpent);
+    // return "%s,%s,%d".format(this.name, this.favourite.getName(),
+    // this.moneySpent);
   }
 
   public String toString3() {

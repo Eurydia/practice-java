@@ -3,7 +3,6 @@ package github.eurydia.elte.fall2023.unit04.math.textual;
 public class Adder {
 
     public static boolean intTryParse(String a) {
-
         try {
 
             Integer.parseInt(a);

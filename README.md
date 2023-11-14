@@ -28,6 +28,12 @@ Execute a `.class` binary with additional `.jar` archives
 java -jar path/to/archive.jar -cp . -c fully.qualified.class.name
 ```
 
+Running Junit tests
+
+```powershell
+java -cp path/to/junit.jar execute -cp . -cp path/to/dep.jar -c fully.qualified.class.name
+```
+
 ## Resources
 
 - **Language specification (SE8)**: https://docs.oracle.com/javase/specs/jls/se8/html/index.html

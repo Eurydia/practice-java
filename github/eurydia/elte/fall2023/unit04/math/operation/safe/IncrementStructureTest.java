@@ -8,7 +8,7 @@ import check.CheckThat;
 public class IncrementStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("math.operation.safe.Increment")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit04.math.operation.safe.Increment")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

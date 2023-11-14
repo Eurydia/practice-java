@@ -8,7 +8,7 @@ import check.CheckThat;
 public class AdderStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("math.operation.textual.Adder")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit04.operation.textual.Adder")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

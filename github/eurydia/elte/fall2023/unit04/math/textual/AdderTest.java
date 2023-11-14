@@ -25,10 +25,7 @@ public class AdderTest {
 
     @Test
     public void addDoubleZeroToInt() {
-
-        UnsupportedOperationException thrown = assertThrows(UnsupportedOperationException.class,
-                () -> Adder.addAsText("0.0", "1"));
-        assertEquals("Operands are not numbers", thrown.getMessage());
+        assertEquals("1.0", Adder.addAsText("0.0", "1"));
     }
 
     @Test
@@ -58,9 +55,8 @@ public class AdderTest {
     @Test
     public void addIntToDouble() {
 
-        UnsupportedOperationException thrown = assertThrows(UnsupportedOperationException.class,
-                () -> Adder.addAsText("3", "2.0"));
-        assertEquals("Operands are not numbers", thrown.getMessage());
+        assertEquals("5.0", Adder.addAsText("3", "2.0"));
+        assertEquals("5.0", Adder.addAsText("3.0", "2"));
 
     }
 
