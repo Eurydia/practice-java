@@ -8,14 +8,14 @@ public class Planter {
 
     public Planter() {
 
-        this.plantCounts = new int[] { 0, 0, 100, 0, 0, 0, 0, 0 };
+        this.plantCounts = new int[Planet.values().length];
+        this.plantCounts[Planet.EARTH.getIntRepr()] = 100;
         this.planterLocation = Planet.EARTH;
     }
 
     public Planter(int[] prevData) {
         this();
         if (prevData.length != Planet.values().length) {
-
             String errorMsg = String.format(
                     "Invalid array length. Expected %d, got %d.",
                     Planet.values().length,
