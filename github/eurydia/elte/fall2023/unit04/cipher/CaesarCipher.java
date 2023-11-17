@@ -11,11 +11,27 @@ public class CaesarCipher {
     var encrptedStringBuilder = new StringBuilder();
     for (char c : unencryptedString.toCharArray()) {
 
-      int encrptedChar = (c + this.shift - 97) % 26;
+      int encryptedChar = ((c + this.shift - 97) % 26) + 97;
 
-      encrptedStringBuilder.append(encrptedChar);
+      encrptedStringBuilder.append(Character.toChars(encryptedChar));
     }
 
+    return encrptedStringBuilder.toString();
+  }
+
+  public String decrypt(String encryptedString) {
+    var decryptedStringBuilder = new StringBuilder();
+    for (char c : encryptedString.toCharArray()) {
+
+      int decryptedChar = c - this.shift;
+      if (decryptedChar < 97) {
+        decryptedChar += 26;
+      }
+
+      decryptedStringBuilder.append(Character.toChars(decryptedChar));
+    }
+
+    return decryptedStringBuilder.toString();
   }
 
 }
