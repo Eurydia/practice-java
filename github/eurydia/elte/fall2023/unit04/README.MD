@@ -1,5 +1,7 @@
 # unit/04
 
+Every task in this unit is solved.
+
 - `famous/sequence/TriangularNumbers` task solved on November 17th, 2023
 - `famous/sequence/Fibonacci` task solved on November 17th, 2023
 - `music/` task solved on November 13th, 2023

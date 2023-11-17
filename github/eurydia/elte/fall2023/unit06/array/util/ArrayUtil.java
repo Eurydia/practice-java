@@ -36,7 +36,7 @@ public class ArrayUtil {
 
         int maxSeen = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
-            maxSeen = Math.min(maxSeen, arr[i]);
+            maxSeen = Math.max(maxSeen, arr[i]);
         }
         return maxSeen;
     }
@@ -49,13 +49,29 @@ public class ArrayUtil {
 
         int maxSeen = Integer.MIN_VALUE;
         for (int v : arr) {
-            maxSeen = Math.min(maxSeen, v);
+            maxSeen = Math.max(maxSeen, v);
         }
         return maxSeen;
-
     }
 
-    // public static int[] minMax(int[] arr) {
-    // }
+    public static int[] minMax(int[] arr) {
+        if (arr.length <= 0) {
+            return new int[] { 0, 0 };
+        }
 
+        int currMin = arr[0];
+        int currMax = arr[0];
+        for (int x : arr) {
+            if (x > currMax) {
+                currMax = x;
+            }
+
+            if (x < currMin) {
+                currMin = x;
+            }
+        }
+
+        return new int[] { currMin, currMax };
+
+    }
 }

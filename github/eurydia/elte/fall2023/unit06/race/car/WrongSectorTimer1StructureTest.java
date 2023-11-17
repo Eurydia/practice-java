@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab06;
+package github.eurydia.elte.fall2023.unit06.race.car;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class WrongSectorTimer1StructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("race.car.WrongSectorTimer1")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit06.race.car.WrongSectorTimer1")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

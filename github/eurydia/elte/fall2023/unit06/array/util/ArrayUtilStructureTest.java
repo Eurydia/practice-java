@@ -8,7 +8,7 @@ import check.CheckThat;
 public class ArrayUtilStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("elte_2023_fall.unit06.array.util.ArrayUtil")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit06.array.util.ArrayUtil")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

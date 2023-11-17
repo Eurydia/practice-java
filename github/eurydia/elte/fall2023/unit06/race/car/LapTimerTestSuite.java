@@ -1,11 +1,7 @@
-package github.eurydia.elte.fall2023.tests.lab06;
+package github.eurydia.elte.fall2023.unit06.race.car;
 
 import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
-
-import race.car.SectorTimerTest;
-import race.car.WrongSectorTimer1Test;
-import race.car.WrongSectorTimer2Test;
 
 @Suite
 @SelectClasses({
@@ -15,8 +11,8 @@ import race.car.WrongSectorTimer2Test;
 		WrongSectorTimer2StructureTest.class,
 		WrongSectorTimer2Test.class,
 
-		SectorTimerStructureTest.class,
+		LapTimerStructureTest.class,
 		SectorTimerTest.class
 })
-public class SectorTimerTestSuite {
+public class LapTimerTestSuite {
 }
