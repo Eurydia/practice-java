@@ -8,7 +8,7 @@ import check.CheckThat;
 public class FibonacciStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("elte_2023_fall.unit04.famous.sequence.Fibonacci")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit04.famous.sequence.Fibonacci")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

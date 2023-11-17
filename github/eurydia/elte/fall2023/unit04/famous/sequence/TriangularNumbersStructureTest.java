@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.unit04.triangularnumber;
+package github.eurydia.elte.fall2023.unit04.famous.sequence;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class TriangularNumbersStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("famous.sequence.TriangularNumbers")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit04.famous.sequence.TriangularNumbers")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

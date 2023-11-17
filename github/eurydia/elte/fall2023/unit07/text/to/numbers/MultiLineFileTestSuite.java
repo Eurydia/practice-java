@@ -5,7 +5,7 @@ import org.junit.platform.suite.api.Suite;
 
 @Suite
 @SelectClasses({
-    MultiLineFileStructureTest.class,
-    MultiLineFileTest.class })
+        MultiLineFileStructureTest.class,
+        MultiLineFileTest.class })
 public class MultiLineFileTestSuite {
 }

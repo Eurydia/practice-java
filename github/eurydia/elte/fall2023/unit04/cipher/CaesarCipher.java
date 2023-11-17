@@ -7,4 +7,15 @@ public class CaesarCipher {
     this.shift = shift;
   }
 
+  public String encrypt(String unencryptedString) {
+    var encrptedStringBuilder = new StringBuilder();
+    for (char c : unencryptedString.toCharArray()) {
+
+      int encrptedChar = (c + this.shift - 97) % 26;
+
+      encrptedStringBuilder.append(encrptedChar);
+    }
+
+  }
+
 }
