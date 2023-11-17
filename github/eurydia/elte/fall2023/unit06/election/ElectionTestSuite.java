@@ -1,9 +1,7 @@
-package github.eurydia.elte.fall2023.tests.lab06;
+package github.eurydia.elte.fall2023.unit06.election;
 
 import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
-
-import election.ElectionTest;
 
 @Suite
 @SelectClasses({

@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab06;
+package github.eurydia.elte.fall2023.unit06.election;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class ElectionStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("election.Election")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit06.election.Election")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 
@@ -27,14 +27,14 @@ public class ElectionStructureTest {
 
     @Test
     public void methodAddVote() {
-        it.hasMethodWithParams("addVote", "election.candidate.Candidate")
+        it.hasMethodWithParams("addVote", "github.eurydia.elte.fall2023.unit06.election.candidate.Candidate")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
                 .thatReturnsNothing();
     }
 
     @Test
     public void methodAddVotes() {
-        it.hasMethodWithParams("addVotes", "election.candidate.Candidate", "int")
+        it.hasMethodWithParams("addVotes", "github.eurydia.elte.fall2023.unit06.election.candidate.Candidate", "int")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
                 .thatReturnsNothing();
     }
@@ -50,14 +50,14 @@ public class ElectionStructureTest {
     public void methodGetCandidatesWithMoreVotesThan() {
         it.hasMethodWithParams("getCandidatesWithMoreVotesThan", "int")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
-                .thatReturns("array of election.candidate.Candidate");
+                .thatReturns("array of github.eurydia.elte.fall2023.unit06.election.candidate.Candidate");
     }
 
     @Test
     public void methodGetWinner() {
         it.hasMethodWithNoParams("getWinner")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
-                .thatReturns("election.candidate.Candidate");
+                .thatReturns("github.eurydia.elte.fall2023.unit06.election.candidate.Candidate");
     }
 
     @Test

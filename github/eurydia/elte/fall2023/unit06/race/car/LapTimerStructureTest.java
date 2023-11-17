@@ -1,10 +1,5 @@
 package github.eurydia.elte.fall2023.unit06.race.car;
 
-import static check.CheckThat.ofType;
-import static check.CheckThat.Condition.*;
-import org.junit.jupiter.api.Test;
-import check.CheckThat;
-
 public class LapTimerStructureTest {
     // @Test
     // public void fieldLapTimes() {

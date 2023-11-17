@@ -1,6 +1,5 @@
-package github.eurydia.elte.fall2023.tests.lab06;
+package github.eurydia.elte.fall2023.unit06.election;
 
-import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
 import org.junit.jupiter.api.*;
 import check.CheckThat;
@@ -8,7 +7,7 @@ import check.CheckThat;
 public class CandidateStructureTest {
     @Test
     public void testEnum() {
-        CheckThat.theEnum("election.candidate.Candidate")
+        CheckThat.theEnum("github.eurydia.elte.fall2023.unit06.election.candidate.Candidate")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
                 .hasEnumElements("JACK", "JILL", "SAM", "MAX");
     }

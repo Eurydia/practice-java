@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab06;
+package github.eurydia.elte.fall2023.unit06.election;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class ElectionTestStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("election.ElectionTest")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit06.election.ElectionTest")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 
@@ -26,12 +26,14 @@ public class ElectionTestStructureTest {
 
     @Test
     public void methodSingleCandidate() {
-        it.hasTestMethodWithParams("singleCandidate", "election.candidate.Candidate", "int");
+        it.hasTestMethodWithParams("singleCandidate",
+                "github.eurydia.elte.fall2023.unit06.election.candidate.Candidate", "int");
     }
 
     @Test
     public void methodTwoCandidatesSameVoteCount() {
-        it.hasTestMethodWithParams("twoCandidatesSameVoteCount", "election.candidate.Candidate",
-                "election.candidate.Candidate", "int");
+        it.hasTestMethodWithParams("twoCandidatesSameVoteCount",
+                "github.eurydia.elte.fall2023.unit06.election.candidate.Candidate",
+                "github.eurydia.elte.fall2023.unit06.election.candidate.Candidate", "int");
     }
 }
