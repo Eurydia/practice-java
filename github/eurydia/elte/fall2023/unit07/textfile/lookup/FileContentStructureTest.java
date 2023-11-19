@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab07;
+package github.eurydia.elte.fall2023.unit07.textfile.lookup;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class FileContentStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("textfile.lookup.FileContent")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit07.textfile.lookup.FileContent")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab07;
+package github.eurydia.elte.fall2023.unit07.textfile;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class StatisticsStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("textfile.Statistics")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit07.textfile.Statistics")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 
