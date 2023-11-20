@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab08;
+package github.eurydia.elte.fall2023.unit08.worker.schedule;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class WorkerScheduleStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("worker.schedule.WorkerSchedule")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit08.worker.schedule.WorkerSchedule")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

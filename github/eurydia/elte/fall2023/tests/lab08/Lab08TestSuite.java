@@ -5,7 +5,7 @@ import org.junit.platform.suite.api.Suite;
 
 @Suite
 @SelectClasses({
-        WorkerScheduleSuite.class, ListUtilSuite.class, CharacterStatisticsSuite.class
+                WorkerScheduleTestSuite.class, ListUtilSuite.class, CharacterStatisticsSuite.class
 })
 public class Lab08TestSuite {
 }
