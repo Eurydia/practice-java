@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab08;
+package github.eurydia.elte.fall2023.unit08.data.structure;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class ListUtilStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("data.structure.ListUtil")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit08.data.structure.ListUtil")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

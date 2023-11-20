@@ -1,13 +1,11 @@
-package github.eurydia.elte.fall2023.tests.lab08;
+package github.eurydia.elte.fall2023.unit08.data.structure;
 
 import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
-
-import data.structure.ListUtilTest;
 
 @Suite
 @SelectClasses({
         ListUtilStructureTest.class, ListUtilTest.class
 })
-public class ListUtilSuite {
+public class ListUtilTestSuite {
 }

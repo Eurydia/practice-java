@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab08;
+package github.eurydia.elte.fall2023.unit08.text.util;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class CharacterStatisticsStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("text.util.CharacterStatistics")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit08.text.util.CharacterStatistics")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
                 .thatHas(TEXTUAL_REPRESENTATION);
     }
