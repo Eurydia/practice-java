@@ -3,12 +3,13 @@ package github.eurydia.elte.fall2023.assignment.planet.structure;
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
 import org.junit.jupiter.api.*;
+
 import check.CheckThat;
 
 public class PlanterCompulsoryStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("planet.plant.Planter")
+        CheckThat.theClass("github.eurydia.elte.fall2023.assignment.planet.plant.Planter")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

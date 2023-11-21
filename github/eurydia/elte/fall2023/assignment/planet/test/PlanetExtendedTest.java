@@ -11,13 +11,13 @@ public class PlanetExtendedTest {
         @Test
         public void init2() {
 
-                Planter c = new Planter(new int[] { 1, 2, 3, 4, 5, 6, 7, 8 });
+                Planter planter = new Planter(new int[] { 1, 2, 3, 4, 5, 6, 7, 8 });
 
-                c.growPlants();
+                planter.growPlants();
 
                 assertArrayEquals(
                                 new int[] { 1, 2, 6, 4, 5, 6, 7, 8 },
-                                c.getPlantCounts());
+                                planter.getPlantCounts());
 
         }
 

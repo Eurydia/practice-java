@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab09;
+package github.eurydia.elte.fall2023.unit09.data.structure;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class MultiSetStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("data.structure.MultiSet")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit09.data.structure.MultiSet")
                 .withTypeParameter("E")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }

@@ -23,7 +23,7 @@ public class Planter {
             throw new IllegalArgumentException(errorMsg);
         }
 
-        this.plantCounts = new int[Planet.values().length];
+        this.plantCounts = new int[prevData.length];
         for (int i = 0; i < prevData.length; i++) {
             this.plantCounts[i] = prevData[i];
         }
@@ -45,7 +45,7 @@ public class Planter {
 
     public int[] getPlantCounts() {
 
-        int[] plantCounts = new int[Planet.values().length];
+        int[] plantCounts = new int[this.plantCounts.length];
 
         for (Planet p : Planet.values()) {
             plantCounts[p.getIntRepr()] = this.getPlantCount(p);

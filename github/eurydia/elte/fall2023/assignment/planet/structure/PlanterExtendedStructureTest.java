@@ -8,7 +8,7 @@ import check.CheckThat;
 public class PlanterExtendedStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("planet.plant.Planter")
+        CheckThat.theClass("github.eurydia.elte.fall2023.assignment.planet.plant.Planter")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }
 

@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.tests.lab09;
+package github.eurydia.elte.fall2023.unit09;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
