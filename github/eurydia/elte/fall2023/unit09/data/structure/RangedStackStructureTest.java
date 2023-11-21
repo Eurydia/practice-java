@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.unit09;
+package github.eurydia.elte.fall2023.unit09.data.structure;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class RangedStackStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("data.structure.RangedStack")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit09.data.structure.RangedStack")
                 .withTypeParameter("T")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL);
     }

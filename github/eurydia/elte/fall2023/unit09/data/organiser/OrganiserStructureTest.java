@@ -1,4 +1,4 @@
-package github.eurydia.elte.fall2023.unit09;
+package github.eurydia.elte.fall2023.unit09.data.organiser;
 
 import static check.CheckThat.*;
 import static check.CheckThat.Condition.*;
@@ -8,7 +8,7 @@ import check.CheckThat;
 public class OrganiserStructureTest {
     @BeforeAll
     public static void init() {
-        CheckThat.theClass("data.organiser.Organiser")
+        CheckThat.theClass("github.eurydia.elte.fall2023.unit09.data.organiser.Organiser")
                 .withTypeParameter("T")
                 .thatIs(FULLY_IMPLEMENTED, INSTANCE_LEVEL, VISIBLE_TO_ALL)
                 .thatHas(TEXTUAL_REPRESENTATION);
