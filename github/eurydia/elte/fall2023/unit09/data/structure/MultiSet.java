@@ -48,7 +48,7 @@ public class MultiSet<E> {
   }
 
   public MultiSet<E> intersect(MultiSet<E> other) {
-    var insectedSet = new MultiSet<E>();
+    var intersectedSet = new MultiSet<E>();
 
     for (Entry<E, Integer> entry : this.elemToCount.entrySet()) {
 
@@ -60,13 +60,11 @@ public class MultiSet<E> {
       int minCount = Math.min(thisECount, otherECount);
 
       if (minCount != 0) {
-        for (int i = 1; i <= minCount; i++) {
-          insectedSet.add(e);
-        }
+        intersectedSet.elemToCount.put(e, minCount);
       }
     }
 
-    return insectedSet;
+    return intersectedSet;
 
   }
 
